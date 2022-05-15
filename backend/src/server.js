@@ -3,10 +3,10 @@ const { exec } = require("child_process")
 const log = require("./logs")
 
 function Start(){
-    exec(`lsof -i TCP:${process.env.PORT} | grep LISTEN`, (error, stdout) => {
+    exec(`lsof -i TCP:4000 | grep LISTEN`, (error, stdout) => {
         if (error) {
-            app.listen(process.env.PORT, () => {
-                log.info(`server started on port ${process.env.PORT}`)
+            app.listen(4000, () => {
+                log.info(`server started on port 4000`)
 
             })
         }
