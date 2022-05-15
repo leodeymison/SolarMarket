@@ -5,7 +5,7 @@
 
 ```bash
 $ npm install
-$ Criar um arquivo .env cópia do .env.example colocando os dados
+$ Criar um arquivo .env cópia do .env.example colocando os dados do banco de dados
 $ npm start
 $
 $ - htttp://localhost:4000
