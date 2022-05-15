@@ -1,0 +1,49 @@
+:root {
+  --color-background: rgb(34, 34, 34);
+  --color-background-secund1: rgb(48, 48, 48);
+  --color-background-secund2: rgb(90, 90, 90);
+  --color-background-secund2: rgb(119, 119, 119);
+  --color-text: white;
+}
+*,*::before,*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+#app{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--color-text);
+  background: var(--color-background);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+a,p, strong, span, label {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+
+.btn{
+  border: none;
+  padding: .5em 1em;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 .3em;
+}
+.btn.primary{
+  background-color: rgb(16, 144, 218);
+  color: var(--color-text);
+}
+.btn.danger{
+  background-color: rgb(218, 60, 16);
+  color: var(--color-text);
+}

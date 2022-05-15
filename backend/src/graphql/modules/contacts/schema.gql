@@ -1,0 +1,33 @@
+
+type Contact {
+    id: Int,
+    name: String,
+    second_name:String, 
+    company: String,
+    phone: String,
+    m_phone: String,
+    mailto: String,
+    m_mailto: String,
+    createdAt: String,
+    updatedAt: String
+}
+
+type Query {
+    contacts:  [Contact],
+    contact(id: Int):  Contact
+}
+
+input ContactInput {
+    name: String,
+    second_name:String, 
+    company: String,
+    phone: String,
+    m_phone: String,
+    mailto: String,
+    m_mailto: String,
+}
+type Mutation {
+    createContact(
+        data: ContactInput
+    ): Contact
+}
