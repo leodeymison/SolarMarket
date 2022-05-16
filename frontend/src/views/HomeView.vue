@@ -40,7 +40,6 @@ export default {
 <template>
   <div class="contacts">
     <p class="msg" v-if="contacts.length == 0">Nenhum contato cadastrado</p>
-    {{ newContact }}
     <Contact v-for="contact in contacts" :data="contact" :key="contact.id" />
   </div>
 </template>
